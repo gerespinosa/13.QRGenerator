@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Generator | 100 Days Of JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="url" placeholder="Introduce tu URL">
+
+        <select name="size" id="choose-size">
+            <option value="200">200x200px</option>
+            <option value="400">400x400px</option>
+            <option value="800">800x800px</option>
+        </select>
+
+        <div class="color-picker">
+            <label for="dark-color">Dark Color:</label>
+            <input type="color" id="dark-color" value="#000000">
+
+            <label for="light-color">Light Color:</label>
+            <input type="color" id="light-color" value="#FFFFFF">
+
+        </div>
+
+        <button id="generator-btn" class="generator-btn">Get QR</button>
+
+    </div>
+
+    <div class="qr-code"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
